@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!-- DEMO de venta, no el sitio oficial del local. Lleva nombre, reseñas y
+     horario reales, por eso va con noindex. Se quita si el local contrata. -->
+<meta name="robots" content="noindex, nofollow">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Placeres Argentino · Pastelería argentina y helados en San Bernardo</title>
+<meta name="description" content="Placeres Argentino — cañoncitos de dulce de leche, medialunas, pastafrola, alfajores y helados artesanales en El Cerrillo 19364, San Bernardo.">
+
+<!--
+  ============================================================
+  DEMO — PLACERES ARGENTINO (El Cerrillo 19364, San Bernardo)
+
+  ✅ DATOS REALES VERIFICADOS (10-09-2026)
+  - Google Maps: 4.6★, 8 opiniones, Pastelería.
+  - Dirección: El Cerrillo 19364, 8000500 San Bernardo.
+  - Teléfono publicado en Google: 9 7729 7107.
+  - Place ID real: 0x9662d90075b92001:0xffc68123acf5b410
+  - Coordenadas: -33.6470852, -70.6668002
+  - Cierra a las 22:00 (confirmado por Google).
+  - Servicio: solo para llevar (confirmado por Google).
+  - Palabra más repetida en sus opiniones: precios.
+  - HELADERÍA: tienen vitrina propia de helados con las tinas a la vista, visible en
+  -   su propia foto. Google NO los tiene catalogados como heladería, solo como
+  -   pastelería — se están perdiendo búsquedas por eso.
+  - Productos identificados en sus propias fotos de vitrina: cañoncitos de dulce de
+  -   leche, medialunas, pastafrola y alfajores de maicena.
+  - 3 reseñas reales con nombre.
+  - Fotos: 4 fotos propias del local publicadas en su ficha de Google.
+  - GANCHO DE VENTA 1: Google muestra 'Agregar sitio web' en su ficha. NO TIENEN SITIO.
+  - GANCHO DE VENTA 2: una reseña real dice que su ubicación 'está un poco escondida'.
+  -   Un sitio con mapa y cómo llegar ataca exactamente ese problema.
+
+  ⚠️ PENDIENTE / NUNCA INVENTADO:
+  - PRECIOS: no publican carta. Todo va a 'Consultar'.
+  - SABORES DE HELADO: se ven las tinas pero no se pueden leer los sabores.
+  -   Pedírselos para armar bien esa sección.
+  - SIN INSTAGRAM ENCONTRADO. Preguntarles si tienen cuenta.
+  - WHATSAPP: el número es móvil pero no se pudo confirmar que tenga WhatsApp.
+  -   Por eso la página usa tel:.
+  - HORA DE APERTURA: Google solo confirma el cierre (22:00).
+  - La reseña de 4 estrellas menciona que es 'una tienda de paso solamente'.
+  -   Vale la pena preguntarles si quieren mesas o si el modelo es ese a propósito.
+  - Falta el logo real.
+  ============================================================
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="loader">
+  <div class="loader-marca" aria-hidden="true">
+    <svg viewBox="0 0 64 64" width="48" height="48"><path d="M8 40c0-14 10-24 24-24s24 10 24 24z" fill="currentColor"/><path d="M8 40h48v7H8z" fill="currentColor" opacity=".55"/></svg>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <button class="brand" data-tab="inicio">
+      <span class="brand-ico" aria-hidden="true">
+        <svg viewBox="0 0 64 64" width="22" height="22"><path d="M8 40c0-14 10-24 24-24s24 10 24 24z" fill="currentColor"/><path d="M8 40h48v7H8z" fill="currentColor" opacity=".55"/></svg>
+      </span>
+      <span class="brand-name">Placeres Argentino</span>
+    </button>
+
+    <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
+      <button class="nav-link active" data-tab="inicio">Inicio</button>
+      <button class="nav-link" data-tab="nosotros">Nosotros</button>
+      <button class="nav-link" data-tab="carta">Carta</button>
+      <button class="nav-link" data-tab="resenas">Reseñas</button>
+      <button class="nav-link" data-tab="visitanos">Visítanos</button>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn-solid btn-sm" href="tel:+56977297107">Llamar</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= INICIO ================= -->
+<section class="tab-panel active" data-tab-panel="inicio">
+  <div class="hero">
+    <div class="hero-photo">
+      <img src="fotos/vitrina.jpg" alt="Vitrina de Placeres Argentino con cañoncitos de dulce de leche, medialunas, pastafrola y alfajores de maicena">
+    </div>
+    <div class="hero-scrim"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Pastelería argentina y heladería · San Bernardo</p>
+      <h1 class="reveal">Cañoncitos, medialunas y pastafrola</h1>
+      <p class="hero-lead reveal">Pastelería argentina hecha acá, en El Cerrillo 19364. Y además, vitrina propia de helados artesanales.</p>
+
+      <div class="hero-pills reveal">
+        <span class="pill"><span class="status-dot" id="statusDot"></span><span id="statusText">Consultando horario…</span></span>
+        <span class="pill">★ <strong>4.6</strong> · 8 opiniones en Google</span>
+        <span class="pill">🍦 También heladería</span>
+      </div>
+
+      <div class="hero-ctas reveal">
+        <button class="btn btn-solid" data-tab="carta">Ver la carta</button>
+        <button class="btn btn-ghost" data-tab="visitanos">Cómo llegar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <span class="eyebrow">Lo que hacemos</span>
+        <h2 class="section-title">Los clásicos, bien hechos</h2>
+        
+      </div>
+      <div class="pilares">
+        <article class="info-card reveal">
+          <div class="pilar-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 4.6A8.5 8.5 0 1 0 17.5 19.4 9.8 9.8 0 0 1 17.5 4.6z"/><path d="M9.2 8.2c1.1 2.4 1.1 5.2 0 7.6"/></svg></div>
+          <h3>Pastelería argentina</h3>
+          <p>Cañoncitos de dulce de leche, medialunas, pastafrola y alfajores de maicena. Todo eso se ve en sus propias fotos, sin adornos.</p>
+        </article>
+        <article class="info-card reveal">
+          <div class="pilar-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 9h8l-3.2 11a.9.9 0 0 1-1.6 0z"/><circle cx="9.6" cy="6.4" r="2.6"/><circle cx="14.4" cy="6.4" r="2.6"/><circle cx="12" cy="4.8" r="2.6"/></svg></div>
+          <h3>Helados artesanales</h3>
+          <p>Tienen su propia vitrina de helados con las tinas a la vista. Google los tiene catalogados solo como pastelería, así que mucha gente no lo sabe.</p>
+        </article>
+        <article class="info-card reveal">
+          <div class="pilar-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 8.5h4a2.2 2.2 0 0 1 0 4.4H9V8.5z"/><path d="M9 12.9V16"/><path d="M7.5 10.6h4.5M7.5 12.9h4.5"/></svg></div>
+          <h3>Precio de barrio</h3>
+          <p>"Precios" es la palabra más repetida en sus opiniones. Una reseña lo pone así: "exquisitos y variados productos, buenos precios… son adictivos esos pasteles".</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NOSOTROS ================= -->
+<section class="tab-panel" data-tab-panel="nosotros">
+  <div class="section">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <span class="eyebrow">Quiénes somos</span>
+        <h2 class="section-title">Escondidos, pero vale la pena</h2>
+      </div>
+      <div class="nosotros-grid">
+        <div class="nosotros-text reveal">
+          <p class="lead">
+            Placeres Argentino es <strong>pastelería argentina y heladería</strong> en El
+            Cerrillo 19364. Cañoncitos, medialunas, pastafrola, alfajores de maicena y
+            helados artesanales, para llevar.
+          </p>
+          <p>
+            Una de sus reseñas dice algo que conviene leer dos veces:
+            <em>"linda tienda para comprar, muy buenos precios y productos, pero
+            su ubicación está un poco escondida"</em>. Y otra cuenta cómo los descubrió:
+            <em>"venden los productos a la salida del colegio de mis hijos"</em>. El
+            producto ya convence — lo que falta es que sea fácil encontrarlos.
+          </p>
+          <div class="badges reveal">
+            <span class="badge">4.6★ · 8 opiniones</span>
+            <span class="badge">Para llevar</span>
+            <span class="badge">Pastelería argentina</span>
+            <span class="badge">Helados artesanales</span>
+            <span class="badge">Abierto hasta las 22:00</span>
+          </div>
+          
+        </div>
+        <div class="nosotros-fotos reveal">
+          <figure class="foto-grande">
+            <img src="fotos/vitrina.jpg" alt="Vitrina de pastelería de Placeres Argentino" loading="lazy">
+            <figcaption>La vitrina</figcaption>
+          </figure>
+          <figure>
+            <img src="fotos/helados.jpg" alt="Vitrina de helados artesanales de Placeres Argentino" loading="lazy">
+          </figure>
+          <figure>
+            <img src="fotos/horneado.jpg" alt="Bandeja de horneado recién salido en Placeres Argentino" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CARTA ================= -->
+<section class="tab-panel" data-tab-panel="carta">
+  <div class="section">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <span class="eyebrow">La carta</span>
+        <h2 class="section-title">Nuestra carta</h2>
+        <p class="section-sub">Arma tu pedido y consúltanos. Todo lo que aparece acá se ve en sus propias fotos: no hay nada de relleno.</p>
+      </div>
+      <div class="menu-tabs" id="menuTabs" role="tablist" aria-label="Categorías de la carta"></div>
+      <div id="menuPanels"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESEÑAS ================= -->
+<section class="tab-panel" data-tab-panel="resenas">
+  <div class="section">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <span class="eyebrow">Lo que dicen</span>
+        <h2 class="section-title">4.6 / 5 · 8 opiniones en Google</h2>
+      </div>
+      <div class="resenas-grid">
+        <article class="review-card reveal">
+          <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+          <p>"Exquisitos y variados productos, buenos precios. Los conocí porque venden los productos a la salida del colegio de mis hijos. ¡Son adictivos esos pasteles!"</p>
+          <footer><span class="avatar" aria-hidden="true">GD</span>
+            <span class="review-meta"><strong>Gustavo Duco</strong>hace un mes</span></footer>
+        </article>
+        <article class="review-card reveal">
+          <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+          <p>"Maravillosa experiencia, excelentes productos, 100% recomendados."</p>
+          <footer><span class="avatar" aria-hidden="true">MP</span>
+            <span class="review-meta"><strong>María Paz Contreras Hernández</strong>hace 11 meses</span></footer>
+        </article>
+        <article class="review-card reveal">
+          <div class="stars" aria-label="4 de 5 estrellas">★★★★☆</div>
+          <p>"Linda tienda para comprar, muy buenos precios y productos."</p>
+          <footer><span class="avatar" aria-hidden="true">CR</span>
+            <span class="review-meta"><strong>Claudio Rosales</strong>Local Guide · hace 4 meses</span></footer>
+        </article>
+      </div>
+      <p class="review-cta-bajo reveal">
+        <a href="https://search.google.com/local/writereview?placeid=0x9662d90075b92001:0xffc68123acf5b410" target="_blank" rel="noopener">
+          ¿Nos visitaste? Déjanos tu reseña en Google
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VISÍTANOS ================= -->
+<section class="tab-panel" data-tab-panel="visitanos">
+  <div class="section">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <span class="eyebrow">Visítanos</span>
+        <h2 class="section-title">Estamos en El Cerrillo 19364</h2>
+      </div>
+      <div class="visitanos-grid">
+        <div class="visitanos-info reveal">
+          <div class="dato">
+            <span class="dato-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-6-7-11a7 7 0 1 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+            <div><strong>El Cerrillo 19364</strong><span>San Bernardo, Región Metropolitana</span></div>
+          </div>
+          <div class="dato">
+            <span class="dato-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <div>
+              <strong>Horario</strong>
+              <span>Cierra a las 22:00</span>
+              <span class="nota-fuente">La hora de apertura no está publicada en Google — conviene confirmarla con el local.</span>
+            </div>
+          </div>
+          <div class="dato">
+            <span class="dato-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1z"/></svg></span>
+            <div><strong>+56 9 7729 7107</strong><span>Teléfono publicado en su ficha de Google</span></div>
+          </div>
+          <div class="visitanos-ctas">
+            <a class="btn btn-solid" href="tel:+56977297107">Llamar al local</a>
+            <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=Placeres+argentino+San+Bernardo&destination_place_id=0x9662d90075b92001:0xffc68123acf5b410" target="_blank" rel="noopener">Cómo llegar</a>
+            <a class="btn btn-ghost" href="https://waze.com/ul?ll=-33.6470852,-70.6668002&navigate=yes" target="_blank" rel="noopener">Abrir en Waze</a>
+          </div>
+        </div>
+        <div class="map-frame reveal">
+          <!-- Embed REAL: place id y coordenadas de su ficha de Google (10-09-2026) -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.0!2d-70.6668002!3d-33.6470852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d90075b92001%3A0xffc68123acf5b410!2sPlaceres%20argentino!5e0!3m2!1ses-419!2scl!4v1789005600000!5m2!1ses-419!2scl"
+            loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"
+            title="Mapa de Placeres Argentino en El Cerrillo 19364"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <span class="brand-name footer-brand">Placeres Argentino</span>
+      <p>El Cerrillo 19364 · San Bernardo, Región Metropolitana</p>
+      <p class="status-line"><span class="status-dot" id="statusDot2"></span> <span id="statusText2">—</span></p>
+    </div>
+    <div class="footer-links">
+      <a href="tel:+56977297107">Teléfono</a>
+      <a href="https://search.google.com/local/writereview?placeid=0x9662d90075b92001:0xffc68123acf5b410" target="_blank" rel="noopener">Dejar una reseña</a>
+    </div>
+  </div>
+</footer>
+
+<div class="float-widget">
+  <a href="tel:+56977297107" class="float-btn float-tel" aria-label="Llamar a Placeres Argentino">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1z"/></svg>
+  </a>
+</div>
+<script src="vida.js"></script>
+<script src="carta-fotos.js"></script>
+<script src="script.js"></script>
+<script src="carrito.js"></script>
+</body>
+</html>
