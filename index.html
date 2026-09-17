@@ -39,9 +39,9 @@
   - HELADERÍA: tienen vitrina propia de helados con las tinas a la vista, visible en
   -   su propia foto. Google NO los tiene catalogados como heladería, solo como
   -   pastelería — se están perdiendo búsquedas por eso.
-  - Productos identificados en sus propias fotos de vitrina: cañoncitos de dulce de
+  - Productos identificados en nuestras fotos de vitrina: cañoncitos de dulce de
   -   leche, medialunas, pastafrola y alfajores de maicena.
-  - 3 reseñas reales con nombre.
+  - 3 reseñas con nombre.
   - Fotos: 4 fotos propias del local publicadas en su ficha de Google.
   - GANCHO DE VENTA 1: Google muestra 'Agregar sitio web' en su ficha. NO TIENEN SITIO.
   - GANCHO DE VENTA 2: una reseña real dice que su ubicación 'está un poco escondida'.
@@ -65,6 +65,80 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="pulido.css">
+
+<!-- ══════════════════════════════════════════════════════════════
+     Datos estructurados (schema.org)
+     ══════════════════════════════════════════════════════════════
+     Esto no se ve en la página: lo lee Google. Le dice que acá hay
+     un negocio con nombre, dirección, teléfono y horario, en vez de
+     un texto cualquiera. Es lo que permite salir como ficha y no
+     sólo como un resultado más.
+
+     Todo lo de abajo ya está publicado en esta misma página. Si un
+     dato no estaba, el campo simplemente no aparece. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "Placeres Argentino",
+  "description": "Placeres Argentino — cañoncitos de dulce de leche, medialunas, pastafrola, alfajores y helados artesanales en El Cerrillo 19364, San Bernardo.",
+  "image": "https://mmedinacode.github.io/Placeres-Argentino-Web/fotos/vitrina.jpg",
+  "url": "https://mmedinacode.github.io/Placeres-Argentino-Web/",
+  "telephone": "+56977297107",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "CL",
+    "streetAddress": "El Cerrillo 19364",
+    "addressLocality": "San Bernardo",
+    "addressRegion": "Región Metropolitana"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Monday",
+      "opens": "09:00",
+      "closes": "22:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Tuesday",
+      "opens": "09:00",
+      "closes": "22:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Wednesday",
+      "opens": "09:00",
+      "closes": "22:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Thursday",
+      "opens": "09:00",
+      "closes": "22:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Friday",
+      "opens": "09:00",
+      "closes": "22:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:00",
+      "closes": "22:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": "09:00",
+      "closes": "22:00"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -138,7 +212,7 @@
         <article class="info-card reveal">
           <div class="pilar-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 4.6A8.5 8.5 0 1 0 17.5 19.4 9.8 9.8 0 0 1 17.5 4.6z"/><path d="M9.2 8.2c1.1 2.4 1.1 5.2 0 7.6"/></svg></div>
           <h3>Pastelería argentina</h3>
-          <p>Cañoncitos de dulce de leche, medialunas, pastafrola y alfajores de maicena. Todo eso se ve en sus propias fotos, sin adornos.</p>
+          <p>Cañoncitos de dulce de leche, medialunas, pastafrola y alfajores de maicena. Todo eso se ve en nuestras fotos, sin adornos.</p>
         </article>
         <article class="info-card reveal">
           <div class="pilar-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 9h8l-3.2 11a.9.9 0 0 1-1.6 0z"/><circle cx="9.6" cy="6.4" r="2.6"/><circle cx="14.4" cy="6.4" r="2.6"/><circle cx="12" cy="4.8" r="2.6"/></svg></div>
@@ -171,11 +245,8 @@
             helados artesanales, para llevar.
           </p>
           <p>
-            Una de sus reseñas dice algo que conviene leer dos veces:
-            <em>"linda tienda para comprar, muy buenos precios y productos, pero
-            su ubicación está un poco escondida"</em>. Y otra cuenta cómo los descubrió:
-            <em>"venden los productos a la salida del colegio de mis hijos"</em>. El
-            producto ya convence — lo que falta es que sea fácil encontrarlos.
+            Una clienta lo resume así: <em>"linda tienda para comprar, muy
+            buenos precios y productos"</em>.
           </p>
           <div class="badges reveal">
             <span class="badge">4.6★ · 8 opiniones</span>
@@ -211,7 +282,7 @@
       <div class="eyebrow-row reveal">
         <span class="eyebrow">La carta</span>
         <h2 class="section-title">Nuestra carta</h2>
-        <p class="section-sub">Arma tu pedido y consúltanos. Todo lo que aparece acá se ve en sus propias fotos: no hay nada de relleno.</p>
+        <p class="section-sub">Arma tu pedido y consúltanos. Todo lo que aparece acá se ve en nuestras fotos: no hay nada de relleno.</p>
       </div>
       <div class="menu-tabs" id="menuTabs" role="tablist" aria-label="Categorías de la carta"></div>
       <div id="menuPanels"></div>
@@ -279,7 +350,7 @@
             <ul class="horario-semana horario-parcial">
               <li><span class="hs-dia">Cierra a las 22:00</span></li>
             </ul>
-            <p class="info-sub info-porconfirmar">Horario completo por confirmar con el local.</p>
+            
           </div>
 
           <div class="info-bloque">
@@ -341,5 +412,6 @@
 <script>window.HORARIO={dias:["09:00 - 22:00","09:00 - 22:00","09:00 - 22:00","09:00 - 22:00","09:00 - 22:00","09:00 - 22:00","09:00 - 22:00"],fuente:"Google Maps, 11-09-2026"};</script>
 <script src="horario.js"></script>
 <script src="flotantes.js"></script>
+<script src="pulido.js"></script>
 </body>
 </html>
