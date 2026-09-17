@@ -31,7 +31,7 @@ const MENU = {
       },
       {
         "n": "Facturas surtidas",
-        "d": "\"Exquisitos y variados productos\" — cita textual de una reseña real",
+        "d": "\"Exquisitos y variados productos\" — cita textual de una reseña",
         "img": "horneado.jpg"
       }
     ]
